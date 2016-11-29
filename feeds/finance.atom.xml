@@ -7135,4 +7135,4 @@ BJ4AAAAAAADAyPr/AZBMFcj+PzrqAAAAAElFTkSuQmCC
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</summary><category term="finance python pandas"></category></entry></feed>
+</summary><category term="finance"></category><category term="python"></category><category term="pandas"></category></entry></feed>
