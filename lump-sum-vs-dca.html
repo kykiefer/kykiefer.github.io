@@ -1,43 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <title>Lump Sum vs. Dollar Cost Averaging</title>
-        <link rel="stylesheet" href="https://kykiefer.github.io/theme/css/main.css" />
-        <link href="https://kykiefer.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ky's Blog Atom Feed" />
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
 
-        <!--[if IE]>
-            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <link rel="stylesheet" type="text/css" href="https://kykiefer.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://kykiefer.github.io/theme/pygments/github.min.css">
+  <link rel="stylesheet" type="text/css" href="https://kykiefer.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://kykiefer.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Ky's Blog Atom">
+
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="" />
+
+
+<meta name="author" content="Ky Kiefer" />
+<meta name="description" content="" />
+<meta name="keywords" content="finance python pandas">
+<meta property="og:site_name" content="Ky's Blog"/>
+<meta property="og:title" content="Lump Sum vs. Dollar Cost Averaging"/>
+<meta property="og:description" content=""/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://kykiefer.github.io/lump-sum-vs-dca.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2016-11-28 20:00:00-08:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://kykiefer.github.io/author/ky-kiefer.html">
+<meta property="article:section" content="Finance"/>
+<meta property="article:tag" content="finance python pandas"/>
+<meta property="og:image" content="">
+
+  <title>Ky's Blog &ndash; Lump Sum vs. Dollar Cost Averaging</title>
+
 </head>
+<body>
+  <aside>
+    <div>
+      <a href="https://kykiefer.github.io">
+        <img src="https://kykiefer.github.io/theme/img/profile.png" alt="" title="">
+      </a>
+      <h1><a href="https://kykiefer.github.io"></a></h1>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://kykiefer.github.io/">Ky's Blog </a></h1>
-                <nav><ul>
-                    <li class="active"><a href="https://kykiefer.github.io/category/finance.html">Finance</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
-<section id="content" class="body">
-  <article>
-    <header>
-      <h1 class="entry-title">
-        <a href="https://kykiefer.github.io/lump-sum-vs-dca.html" rel="bookmark"
-           title="Permalink to Lump Sum vs. Dollar Cost Averaging">Lump Sum vs. Dollar Cost Averaging</a></h1>
-    </header>
 
-    <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2016-11-28T20:00:00-08:00">
-                Published: Mon 28 November 2016
-        </abbr>
+      <nav>
+        <ul class="list">
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="https://kykiefer.github.io/author/ky-kiefer.html">Ky Kiefer</a>
-        </address>
-<p>In <a href="https://kykiefer.github.io/category/finance.html">Finance</a>.</p>
-<p>tags: <a href="https://kykiefer.github.io/tag/finance-python-pandas.html">finance python pandas</a> </p>
-</footer><!-- /.post-info -->      <style type="text/css">/*!
+          <li><a href="http://getpelican.com/" target="_blank">Pelican</a></li>
+          <li><a href="http://python.org/" target="_blank">Python.org</a></li>
+          <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+          <li><a href="#" target="_blank">You can modify those links in your config file</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-You can add links in your config file" href="#" target="_blank"><i class="fa fa-You can add links in your config file"></i></a></li>
+        <li><a class="sc-Another social link" href="#" target="_blank"><i class="fa fa-Another social link"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+    <h1 id="lump-sum-vs-dca">Lump Sum vs. Dollar Cost Averaging</h1>
+    <p>
+          Posted on Mon 28 November 2016 in <a href="https://kykiefer.github.io/category/finance.html">Finance</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <style type="text/css">/*!
 *
 * IPython notebook
 *
@@ -7174,38 +7219,37 @@ BJ4AAAAAAADAyPr/AZBMFcj+PzrqAAAAAElFTkSuQmCC
 }
 </script>
 
-    </div><!-- /.entry-content -->
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://kykiefer.github.io/tag/finance-python-pandas.html">finance python pandas</a>
+    </p>
+  </div>
 
-  </article>
-</section>
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>blogroll</h2>
-                        <ul>
-                            <li><a href="http://getpelican.com/">Pelican</a></li>
-                            <li><a href="http://python.org/">Python.org</a></li>
-                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
-                            <li><a href="#">You can modify those links in your config file</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-                <div class="social">
-                        <h2>social</h2>
-                        <ul>
-                            <li><a href="https://kykiefer.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
-                            <li><a href="#">You can add links in your config file</a></li>
-                            <li><a href="#">Another social link</a></li>
-                        </ul>
-                </div><!-- /.social -->
-        </section><!-- /#extras -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+</article>
 
+    <footer>
+<p>&copy; Ky Kiefer </p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p>    </footer>
+  </main>
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Ky's Blog ",
+  "url" : "https://kykiefer.github.io",
+  "image": "",
+  "description": ""
+}
+</script>
 </body>
 </html>
